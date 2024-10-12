@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "extends": [
+    "plugin:tailwindcss/recommended",
+    "standard"
+  ],
+  "plugins": [
+    "react",
+    "tailwindcss"
+  ],
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "func-names": ["error", "always"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "quote-props": ["error", "consistent"],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-newline": ["error", { "prevent": true }],
+    "react/jsx-uses-vars": "error",
+    "tailwindcss/no-custom-classname": 0,
+    "import/order": ["error", {
+      "newlines-between": "never",
+      "alphabetize": {
+        "order": "asc",
+        "orderImportKind": "asc"
+      },
+      "groups": [
+        "builtin",
+        "external",
+        "internal",
+        "parent",
+        "sibling",
+        "index",
+        "object",
+        "type"
+      ]
+    }]
+  },
+  "globals": {
+    "Deno": "readonly"
+  }
+}

@@ -1,0 +1,11 @@
+
+@import './assets/inter-3.19/inter.css';
+@import './assets/d-din/d-din.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-shark-900 font-inter text-white;
+}
